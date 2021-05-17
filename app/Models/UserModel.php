@@ -15,7 +15,8 @@ class UserModel extends Model {
         $roles,
         $genders,
         $date,
-        $licences;
+        $licences,
+        $pictures;
 
 
 
@@ -200,6 +201,26 @@ class UserModel extends Model {
     public function setLicences($licences)
     {
         $this->licences = $licences;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of pictures
+    */
+    public function getPictures()
+    {
+        return $this->pictures;
+    }
+
+    /**
+     * Set the value of pictures
+     *
+     * @return  self
+     */
+    public function setPictures($pictures)
+    {
+        $this->pictures = $pictures;
 
         return $this;
     }
