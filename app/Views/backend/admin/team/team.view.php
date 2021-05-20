@@ -18,17 +18,3 @@
         </div>
     </div>
 </div>
-<?php
-echo "<pre>";
-$po = [];
-$data = array();
-$li = 'licences';
-foreach ($players as $key => $value) {
-    
-    //array_push($data[$key], $value->licences);
-    // $data[$key] = [$value->licences];
-    array_push($data, $value->$li);
-}
-
-var_dump($data);
-echo "</pre>";

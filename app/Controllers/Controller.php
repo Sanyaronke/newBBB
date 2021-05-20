@@ -7,10 +7,6 @@ use App\Models\LoadAllTAbleFromDBModel;
 
 class Controller {
     
-    protected $data = [];
-    protected $buttons = [];
-
-    
     /**
      * loadTable
      *

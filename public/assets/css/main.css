@@ -1,0 +1,239 @@
+:root {
+    --color-light-blue: #8691c0;
+    --color-slow-dark: #141E30;
+    --color-orange: #fd7e14;
+    --font-Antonio: 'Antonio', sans-serif;
+    --font-Condensed: 'Roboto Condensed', sans-serif;
+    --font-Scope: 'Scope One', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.pnm--home img {
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.presentation_team {
+    background: #fd7d148c;
+    width: 100%;
+    max-height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    justify-content: center;
+}
+
+.presentation_team--title {
+    padding: 20px;
+    font-size: 15px;
+}
+
+.presentation_team--title h2 {
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.front_body,
+header,
+.ulNav {
+    background: #141E30;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #243B55, #141E30);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #243B55, #141E30);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.text-orange {
+    color: #fd7e14 !important;
+}
+
+.text-nave {
+    color: #8691c0 !important;
+}
+
+.actualite--title {
+    background-color: #31395ed0 !important;
+    color: #fd7e14;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-family: 'Antonio', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 20px !important;
+    color: #2FA8F1 !important;
+}
+
+
+/* .active {
+    font-weight: 700;
+    color: #63b4e6 !important;
+    border-bottom: 2px solid #2FA8F1 !important;
+} */
+
+#footer--nav a {
+    display: flex;
+    align-items: center;
+}
+
+.news-block img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.camp-title {
+    color: #141E30;
+    bottom: 0;
+    left: 0;
+    height: 20px;
+    background-color: #8691c0bb;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+ul {
+    line-height: 21px;
+    padding: 17px 0px;
+    font-weight: 400;
+    text-align: start;
+}
+
+li a {
+    color: white !important;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Scope One', serif;
+}
+
+nav {
+    min-height: 40px;
+}
+
+
+/**********baniere match ************* */
+
+.baniere-match {
+    background: #ffffff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.coach--card {
+    color: #8691c0;
+    min-height: 140px;
+    background: #243b555e;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.team-pnm {
+    font-size: 15px;
+}
+
+.team-pnm span {
+    padding: 0px 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/*******CELLS CARD*******+**/
+
+.carousel_items {
+    background-color: #141E30;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+    max-height: 430px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    overflow: auto;
+}
+
+.cell-direction span {
+    position: absolute;
+    top: 50%;
+    font-size: 50px;
+    font-weight: bold;
+    color: #fd7e14;
+    cursor: pointer;
+    left: 8%;
+    z-index: 1;
+}
+
+.cell-direction span:nth-of-type(2) {
+    right: 8%;
+    text-align: right;
+}
+
+.carousel_items::-webkit-scrollbar {
+    visibility: hidden;
+}
+
+.carousel_cell--items {
+    flex-direction: column;
+    height: 400px;
+    min-width: 300px;
+    max-width: 300px;
+    position: relative;
+    left: 0;
+    text-align: center;
+    font-size: 10px;
+    font-weight: bold;
+    margin: 10px 20px;
+    color: white;
+    background: #243b555e;
+    transition: all 0.5s;
+}
+
+.nav-link span {
+    font-size: 19px;
+    padding-right: 10px;
+    color: #fd7e14;
+}
+
+footer {
+    color: #8691c0;
+    font-size: 12px;
+}
+
+.card-auther-team:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/******* PNM *********/
+
+.player--info {
+    min-height: 500px;
+    color: #8691c0;
+}
+
+
+/****** about ***********/
+
+.about {
+    color: rgba(255, 255, 255, 0.836) !important;
+}

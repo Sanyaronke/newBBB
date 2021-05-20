@@ -1,5 +1,8 @@
 <?php
 namespace App\Core;
+
+use App\Helpers\Helper;
+
 const COOKIE_NAME = 'allAdmin';
 class SecuriteHTML {
     
@@ -16,19 +19,7 @@ class SecuriteHTML {
         return htmlentities($name);
     }
 
-    /**
-     * generer un cookie unique pour la 
-     *
-     * @return void
-     */
-    // public static function generateCookies()
-    // {
-    //     $ticket = session_id().microtime().rand(0,9999999);
-    //     $ticket = hash("sha512", $ticket);
-    //     $_SESSION[COOKIE_NAME] = $ticket;
-    //     setcookie(COOKIE_NAME, $ticket, time() + (60 * 60), "/");
-        
-    // }
+    
 
     /**
      * verifie si un cookie existe au prealable
@@ -61,16 +52,7 @@ class SecuriteHTML {
             header('Location:/connexion');
         }
     }
-    // public static function checkedCookie()
-    // {
-    //     if( isset($_SESSION[COOKIE_NAME]) && $_COOKIE[COOKIE_NAME] === $_SESSION[COOKIE_NAME]){
-    //         self::generateCookies();
-    //         return true;
-    //     } else {
-    //         session_destroy();
-    //         header('Location:/connexion');
-    //     }
-    // }
+    
 
     /**
      * verification si un utilisateur est bien connecter
@@ -100,5 +82,15 @@ class SecuriteHTML {
     {
         setcookie(COOKIE_NAME, $_SESSION[COOKIE_NAME], time() - 3600);
         session_destroy();
+    }
+
+    public static function cryptPass(string $password)
+    {
+        return password_hash(self::securiteHTML($password), PASSWORD_DEFAULT);
+    }
+
+    public function spacialUser()
+    {
+        if (!SecuriteHTML::checkedAccess() && !Helper::is_admin()) {    header('Location:/');}
     }
 }

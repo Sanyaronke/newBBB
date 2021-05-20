@@ -20,9 +20,9 @@ class UserModel extends Model {
 
 
 
-    public function __construct() {
-        $this->table = "user";
-        $this->elements = "*";
+    public function __construct(string $table = "user", string $elements = "*" ) {
+        $this->table = $table;
+        $this->elements = $elements ;
     }
 
     /**

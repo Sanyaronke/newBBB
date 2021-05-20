@@ -21,7 +21,7 @@ class ConnexionController extends Controller {
             }
         
         }
-        require "../app/Views/template/login.view.php";
+        require "../app/Views/backend/login.view.php";
     }
 
 

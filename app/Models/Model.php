@@ -14,6 +14,10 @@ class Model extends Db{
      *
      * @return array 
      */
+    public function lastIdInsert()
+    {
+        return Db::getIsntance()->lastInsertId();
+    }
     public function findAll()
     {
         $query = $this->request("SELECT {$this->elements} FROM {$this->table}");
@@ -78,7 +82,7 @@ class Model extends Db{
         foreach($this as $champ => $valeur){
             
             // (title, description, actif) VALUES (?, ?, ?)
-            if($valeur !== null && $champ != 'db' && $champ != 'table' && $champ != 'element'){
+            if($valeur !== null && $champ != 'db' && $champ != 'table' && $champ != 'elements'){
                 $champs[] = $champ;
                 $inter[] = "?";
                 $valeurs[] = $valeur;
@@ -88,6 +92,7 @@ class Model extends Db{
         $liste_inter = implode(', ', $inter);
 
         return $this->request('INSERT INTO '.$this->table.' ('. $liste_champs.')VALUES('.$liste_inter.')', $valeurs);
+        //var_dump($ok);
     }
 
     /**
@@ -125,7 +130,6 @@ class Model extends Db{
 
     public function hydrate($attributs)
     {
-        var_dump($attributs);
         foreach ($attributs as $key => $value) {
             $key = explode("_", $key);
             $dropBar = "set";

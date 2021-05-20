@@ -28,9 +28,9 @@ class AllGetterSetter extends Model
     /* **************** PARTENAIRE **************** */
 
     protected 
-        $id_partenaire,
-        $partenaire_title,
-        $partenaire_picture;
+    $id_partner,
+    $name_partner,
+    $slug_partner;
 
     /* **************+ MSG IMPORTANT ************** */
 
@@ -64,7 +64,12 @@ class AllGetterSetter extends Model
         $category_pictures,
         $general_category;
 
+    /* **************** maatch coach sub category **************** */
 
+    protected
+    $id_cat_coch,
+    $id_coach,
+    $category;
     /* ************************************************* */
     /*                  GETTER & SETTER                  */
     /* ************************************************* */
@@ -309,6 +314,126 @@ class AllGetterSetter extends Model
     public function setActuDescription($actu_description)
     {
         $this->actu_description = $actu_description;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id_partner
+     */
+    public function getIdPartner()
+    {
+        return $this->id_partner;
+    }
+
+    /**
+     * Set the value of id_partner
+     *
+     * @return  self
+     */
+    public function setIdPartner($id_partner)
+    {
+        $this->id_partner = $id_partner;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of name_partner
+     */
+    public function getNamePartner()
+    {
+        return $this->name_partner;
+    }
+
+    /**
+     * Set the value of name_partner
+     *
+     * @return  self
+     */
+    public function setNamePartner($name_partner)
+    {
+        $this->name_partner = $name_partner;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of slug_partner
+     */
+    public function getSlugPartner()
+    {
+        return $this->slug_partner;
+    }
+
+    /**
+     * Set the value of slug_partner
+     *
+     * @return  self
+     */
+    public function setSlugPartner($slug_partner)
+    {
+        $this->slug_partner = $slug_partner;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id_cat_coch
+     */
+    public function getIdCatCoch()
+    {
+        return $this->id_cat_coch;
+    }
+
+    /**
+     * Set the value of id_cat_coch
+     *
+     * @return  self
+     */
+    public function setIdCatCoch($id_cat_coch)
+    {
+        $this->id_cat_coch = $id_cat_coch;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of id_coach
+     */
+    public function getIdCoach()
+    {
+        return $this->id_coach;
+    }
+
+    /**
+     * Set the value of id_coach
+     *
+     * @return  self
+     */
+    public function setIdCoach($id_coach)
+    {
+        $this->id_coach = $id_coach;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of category
+     */
+    public function getCategory()
+    {
+        return $this->category;
+    }
+
+    /**
+     * Set the value of category
+     *
+     * @return  self
+     */
+    public function setCategory($category)
+    {
+        $this->category = $category;
 
         return $this;
     }
