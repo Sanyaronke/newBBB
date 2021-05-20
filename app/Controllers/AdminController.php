@@ -215,10 +215,12 @@ class AdminController extends Controller{
         $actualiteModel = $this->loadTable("actualites");
         $data = [];
         foreach ($_POST as $key => $val) {
-            array_push($data, $key);
+            echo $_POST[$key] . "<br>";
+            if (!empty($_POST[$key] )) {
+                array_push($data, $key);
+            }
+            
         }
-
-        
 
         if (isset($_FILES['image']['size']) && $_FILES['image']['size'] > 20  && Form::validate($_FILES, ['image'])) {
             $getImage = new Image('image');
