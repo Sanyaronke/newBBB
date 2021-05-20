@@ -1,0 +1,17 @@
+{
+    "name": "dwayn/htdocs",
+    "authors": [{
+        "name": "Anyaronke Daré Samuel",
+        "email": "dwayne-12@hotmail.fr"
+    }],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Route\\": "routers/"
+        },
+        "files": ["app/Core/Alert.php"]
+    },
+    "require": {
+        "php": "^8.0.6"
+    }
+}
