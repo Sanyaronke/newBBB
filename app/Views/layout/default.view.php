@@ -31,7 +31,7 @@ use App\Helpers\Helper;
 <body class="front_body">
 
     <!-- NAVBAR -->
-    <header id="nav--header" class=" animate__animated fixed-top">
+    <header id="nav--header" class=" animate__animated fixed-top mb-5">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="<?= Helper::routename('home') ?>"><img width="40" src="../public/images/logo/bbb-2.png" alt=""></a>
@@ -122,8 +122,8 @@ use App\Helpers\Helper;
         </nav>
     </header>
 
-    <div style="margin-top:100px" class="container-fluid">
-        <div class="container-fluid">
+    <div style="margin-top:100px" class="container-fluid p-0 m-0 overflow-hidden">
+        <div class="container-fluid py-5 px-0 m-0">
             <?= $contents; ?>
         </div>
         <!-- FOOTER -->

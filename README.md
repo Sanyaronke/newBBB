@@ -7,8 +7,10 @@ Features
             License: https : //opensource.org/licenses/MIT
  
 Getting started
-    - You needed PHP> = 5.6 to use the application without complications 
+    - You needed PHP> = 7.4 to use the application without complications 
         The new version of php is advisable.
     - MVC architecture, install autoload via composer to launch the application: 
             $ composer dump-autoload
+
+    - this demo is currently incomplete for the moment
  

@@ -11,7 +11,5 @@
         },
         "files": ["app/Core/Alert.php"]
     },
-    "require-dev": {
-        "phpunit/phpunit": "^9.5"
-    }
+    "require": {}
 }

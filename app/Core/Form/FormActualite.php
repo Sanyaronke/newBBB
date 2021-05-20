@@ -16,12 +16,12 @@ class FormActualite extends Form{
             ->formDiv(["class" => "col-md-11 mx-auto"])
                     ->formDiv(["class" => "form-group"])
                         ->addLabelFor("actu_title","Titre de l'actualité",["class" => "small mb-1"])
-                        ->addInput("text", "actu_title", [$attribut => $values? $values[1]:'',"class" => "form-control", "placeholder"=>"Titre de votre actualité"])
+                        ->addInput("text", "actu_title", [$attribut => $values? $values[1]:'',"class" => "form-control", "placeholder"=>"Titre de votre actualité", "required" => true])
                     ->endFormDiv()
 
                     ->formDiv(["class" => "form-group"])
                         ->addLabelFor("actu_description","Titre de l'actualité",["class" => "small mb-1"])
-                        ->addInput("text", "actu_description", [$attribut => $values? $values[2]:'',"class" => "form-control", "placeholder"=>"Description de votre actualité"])
+                        ->addInput("text", "actu_description", [$attribut => $values? $values[2]:'',"class" => "form-control", "placeholder"=>"Description de votre actualité" ,"required" => true])
                     ->endFormDiv()
 
                     ->formDiv(["class" => "form-group"])

@@ -3,15 +3,15 @@
 use App\Helpers\Helper;
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
-    <title>Dashboard - SB Admin</title>
+    <meta name="description" content="<?=$description?>" />
+    <meta name="author" content="ANYARONKE Daré Samuel" />
+    <title><?=$title?></title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
@@ -26,27 +26,17 @@ use App\Helpers\Helper;
 
     <?php require "modale.php"; ?>
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
-        <a class="navbar-brand" href="index.html">Start Bootstrap</a>
+        <a class="navbar-brand" href="index.html">Démo BBB</a>
         <button class="btn btn-link btn-sm order-1 order-lg-0" id="sidebarToggle" href="#!"><i
                 class="fas fa-bars"></i></button>
-        <!-- Navbar Search-->
-        <form class="d-none d-md-inline-block form-inline ml-auto mr-0 mr-md-3 my-2 my-md-0">
-            <div class="input-group">
-                <input class="form-control" type="text" placeholder="Search for..." aria-label="Search"
-                    aria-describedby="basic-addon2" />
-                <div class="input-group-append">
-                    <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
-                </div>
-            </div>
-        </form>
         <!-- Navbar-->
-        <ul class="navbar-nav">
+        <ul class="ml-auto navbar-nav">
             <li class="nav-item dropdown dropstart">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                     aria-expanded="false">
                     <i class="fas fa-user fa-fw"></i>
                 </a>
-                <ul class="ml-auto text-light dropdown-menu" aria-labelledby="navbarDropdown">
+                <ul class="ml-auto text-light dropdown-menu " aria-labelledby="navbarDropdown">
                     <li><a class="dropdown-item" href="<?=Helper::routename('profil') ?>">Profil</a></li>
                     <li><a class="dropdown-item" href="#">Parametre</a></li>
                     <li><a class="dropdown-item" href="#">Déconnexion</a></li>
@@ -114,7 +104,7 @@ use App\Helpers\Helper;
                 </div>
                 <div class="sb-sidenav-footer">
                     <div class="small">Logged in as:</div>
-                    Start Bootstrap
+                    saMAny
                 </div>
             </nav>
         </div>
@@ -128,7 +118,7 @@ use App\Helpers\Helper;
             <footer class="py-4 bg-light mt-auto">
                 <div class="container-fluid">
                     <div class="d-flex align-items-center justify-content-between small">
-                        <div class="text-muted">Copyright &copy; Your Website 2021</div>
+                        <div class="text-muted">Copyright &copy; demo BBB</div>
                         <div>
                             <a href="#">Privacy Policy</a>
                             &middot;

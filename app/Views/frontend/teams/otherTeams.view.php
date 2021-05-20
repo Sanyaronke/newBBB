@@ -22,7 +22,7 @@ foreach ($dedoublone as $key) {
 
     <div class="">
         <?php for ($i = 0; $i < count($stock_tab2); $i++) : ?>
-            <div class="col-8 mx-auto my-5 text-center text-light"><?= $stock_tab2[$i] ?></div>
+            <div class="col-12 mx-auto my-5 text-center text-light"><?= $stock_tab2[$i] ?></div>
             <div style="min-height:100vh;" class="coach--card col-12 p-5">
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex align-items-around flex-wrap mb-5">
